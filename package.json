@@ -1,0 +1,58 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "tact --config ./tact.config.json",
+    "test": "jest",
+
+    "d1": "ts-node ./sources/scripts/deploy/1_deploy_token.ts",
+    "t1": "ts-node ./sources/scripts/1_transfer_token.ts",
+    "r1": "ts-node ./sources/scripts/1_read_token.ts",
+
+    "d2": "ts-node ./sources/scripts/deploy/2_deploy_staking.ts",
+    "t21": "ts-node ./sources/scripts/2_staking_test.ts",
+    "t22": "ts-node ./sources/scripts/2_delegate_stakingsub.ts",
+    "t23": "ts-node ./sources/scripts/2_update_staking.ts",
+    "t24": "ts-node ./sources/scripts/2_unstaking.ts",
+    "r2": "ts-node ./sources/scripts/2_read_stakingmaster.ts",
+    "r22": "ts-node ./sources/scripts/2_read_stakingsub.ts",
+
+    "d3": "ts-node ./sources/scripts/deploy/3_deploy_dao.ts",
+    "t3": "ts-node ./sources/scripts/3_deploy_proposal.ts",
+    "t32": "ts-node ./sources/scripts/3_vote_proposal.ts",
+    "t33": "ts-node ./sources/scripts/3_vote_delegated_proposal.ts",
+    "t34": "ts-node ./sources/scripts/3_finish_vote.ts",
+    "t35": "ts-node ./sources/scripts/3_update_proposal.ts",
+    "r3": "ts-node ./sources/scripts/3_read_dao.ts",
+
+    "read": "ts-node ./sources/scripts/contract.read.ts"
+  },
+  "dependencies": {
+    "@aws-crypto/sha256-js": "^4.0.0",
+    "@dedust/sdk": "^0.8.6",
+    "@ston-fi/sdk": "^0.4.0",
+    "@tact-lang/compiler": "^1.2.0",
+    "@tact-lang/emulator": "^3.2.2",
+    "@ton/core": "^0.54.0",
+    "@ton/crypto": "^3.2.0",
+    "@ton/sandbox": "^0.15.0",
+    "@ton/test-utils": "^0.4.2",
+    "@ton/ton": "^13.9.0",
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.2.5",
+    "@types/qs": "^6.9.7",
+    "base64url": "^3.0.1",
+    "dotenv": "^16.3.1",
+    "enquirer": "^2.3.6",
+    "jest": "^29.6.2",
+    "open": "^8.4.0",
+    "prando": "^6.0.1",
+    "prettier": "^2.8.8",
+    "qs": "^6.11.0",
+    "ton-crypto": "^3.2.0",
+    "ton-emulator": "^2.1.1",
+    "tonweb": "^0.0.62",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}

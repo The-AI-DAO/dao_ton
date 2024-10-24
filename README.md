@@ -1,1 +1,1 @@
-# AIDAO
+# AI DAO Stagking contracts.

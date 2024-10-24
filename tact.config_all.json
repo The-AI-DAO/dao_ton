@@ -1,0 +1,22 @@
+{
+    "projects": [
+        {
+            "name": "AIJetton",
+            "path": "./sources/aijetton.tact",
+            "output": "./sources/output/jetton",
+            "options": {}
+        },
+        {
+            "name": "Staking",
+            "path": "./sources/staking_contract.tact",
+            "output": "./sources/output/staking",
+            "options": {}
+        },
+        {
+            "name": "DAO",
+            "path": "./sources/vote/dao.tact",
+            "output": "./sources/output/dao",
+            "options": {}
+        }
+    ]
+}

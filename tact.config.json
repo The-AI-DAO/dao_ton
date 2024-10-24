@@ -1,0 +1,10 @@
+{
+    "projects": [
+        {
+            "name": "DAO",
+            "path": "./sources/vote/dao.tact",
+            "output": "./sources/output",
+            "options": {}
+        }
+    ]
+}
