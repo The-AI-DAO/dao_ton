@@ -1,1 +1,1 @@
-# AI DAO Stagking contracts.
+# AI DAO Staking contracts.
